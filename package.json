@@ -35,7 +35,7 @@
     "postinstall": "husky install",
     "prepublishOnly": "pinst --disable",
     "postpublish": "pinst --enable",
-    "format": "prettier --write \"**/*.{css,html,yml,js,json,md,mdx,scss,ts,tsx}\""
+    "format": "prettier --write ."
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
@@ -100,6 +100,6 @@
     ]
   },
   "lint-staged": {
-    "*.{css,html,yml,js,json,md,mdx,scss,ts,tsx}": "prettier --write"
+    ".": "prettier --write"
   }
 }
