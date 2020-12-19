@@ -34,7 +34,8 @@
     "build": "rollup -c",
     "postinstall": "husky install",
     "prepublishOnly": "pinst --disable",
-    "postpublish": "pinst --enable"
+    "postpublish": "pinst --enable",
+    "format": "prettier --write \"**/*.{css,html,yml,js,json,md,mdx,scss,ts,tsx}\""
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
