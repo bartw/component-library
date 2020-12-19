@@ -1,0 +1,24 @@
+name: publish-to-github-pages
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14
+      - run: npm ci
+      - run: npm run lint
+      - run: npm test
+      - run: npm run build-storybook
+      - uses: crazy-max/ghaction-github-pages@v2.2.0
+        with:
+          build_dir: "storybook-static"
+          jekyll: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
