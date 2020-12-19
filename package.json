@@ -29,7 +29,7 @@
     "create-component": "node scripts/create-component.js",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "test": "jest",
+    "test": "jest --coverage",
     "lint": "eslint components",
     "build": "rollup -c",
     "postinstall": "husky install",
@@ -100,6 +100,6 @@
     ]
   },
   "lint-staged": {
-    "*.*": "prettier --write"
+    "*.{css,html,yml,js,json,md,mdx,scss,ts,tsx}": "prettier --write"
   }
 }
