@@ -2,7 +2,7 @@
 
 An almost production ready React component library starter.
 
-- [x] Build ui components with [React](https://reactjs.org/) and [Storybook](https://storybook.js.org/)
+- [x] Build ui components with [React](https://reactjs.org/)
 - Verify code quality using:
   - [x] [TypeScript](https://www.typescriptlang.org/)
   - [x] [ESLint](https://eslint.org/)
@@ -15,4 +15,4 @@ An almost production ready React component library starter.
   - [x] [commitlint](https://commitlint.js.org/)
   - [x] [semantic-release](https://github.com/semantic-release/semantic-release)
   - [x] [GitHub Actions](https://github.com/features/actions)
-- Expose the components and their api on [GitHub Pages](https://pages.github.com/)
+- [x] Visual documentation with [Storybook](https://storybook.js.org/) on [GitHub Pages](https://pages.github.com/)
