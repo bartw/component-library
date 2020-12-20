@@ -180,6 +180,8 @@ https://github.com/bartw/ubiquitous-succotash/settings
 
 ![GitHub Pages](screenshots/github_pages.png)
 
+![Run Workflow](screenshots/run_workflow.png)
+
 ## Bundling
 
 ## Code quality
