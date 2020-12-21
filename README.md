@@ -170,7 +170,7 @@ https://github.com/new
 
 ```shell
 git add .
-git commit -m"initial commit"
+git commit -m "initial commit"
 git remote add origin git@github.com:bartw/ubiquitous-succotash.git
 git branch -M main
 git push -u origin main
