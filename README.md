@@ -79,11 +79,11 @@ The configuration is stolen from [Create React App](https://create-react-app.dev
 
 Off-course we also need [React](https://www.npmjs.com/package/react) and because we're using Typescript we will also include a dependency on the [React type definitions](https://www.npmjs.com/package/@types/react).
 
-We will create a super simple Title component that wraps its children in an ["h1"](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements) tag.
+We will create a super simple `Title` component that wraps its children in an ["h1"](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements) tag.
 
 ```shell
-npm install react react-dom
-npm install -D @types/react @types/react-dom
+npm install react
+npm install -D @types/react
 mkdir components components/title
 touch components/title/Title.tsx
 ```
