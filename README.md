@@ -1,6 +1,6 @@
 # Create, Automate and Document Your Own React Component Library From Scratch
 
-In this story, I will take you along on my journey to create a React Component Library. Don't expect to write a bunch of components. I left that part out because it's too subjective. Instead, we will be using Storybook, Typescript, Jest, GitHub Pages, and a lot more to create a practically empty but almost production-ready Component Library.
+In this story, I will take you along on my journey to create a React Component Library. Don't expect to write a bunch of components. I left that part out because it's too subjective. Instead, we will be using Storybook, TypeScript, Jest, GitHub Pages, and a lot more to create a practically empty but almost production-ready Component Library.
 
 - [x] Build ui components with [React](https://reactjs.org/)
 - [x] Visual documentation with [Storybook](https://storybook.js.org/) on [GitHub Pages](https://pages.github.com/)
@@ -29,6 +29,12 @@ So let's go and create a Component Library that will make you proud!
 
 ## Getting started
 
+We'll start by getting the most important task out of the way: creating the first component.
+
+Open up a shell and start typing.
+
+This block will create a new folder, initialize a [git](https://git-scm.com/docs/git-init) repository, and set up an [npm](https://docs.npmjs.com/cli/v6/commands/npm-init) package.
+
 ```shell
 mkdir component-libary
 cd component-library
@@ -37,10 +43,16 @@ echo "node_modules" >> .gitignore
 npm init -y
 ```
 
+I want to make this project in Typescript from the get-go. Enabling TypeScript is easy. We only need to add a [dependency](https://www.npmjs.com/package/typescript) and a TypeScript configuration file.
+
 ```shell
 npm install -D typescript
 touch tsconfig.json
 ```
+
+The configuration is stolen from [Create React App](https://create-react-app.dev/docs/adding-typescript/#installation) because they probably know it better.
+
+`tsconfig.json`
 
 ```json
 {
@@ -64,6 +76,10 @@ touch tsconfig.json
   "include": ["components"]
 }
 ```
+
+Off-course we also need [React](https://www.npmjs.com/package/react) and because we're using Typescript we will also include a dependency on the [React type definitions](https://www.npmjs.com/package/@types/react).
+
+We will create a super simple Title component that wraps its children in an ["h1"](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements) tag.
 
 ```shell
 npm install react react-dom
